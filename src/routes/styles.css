@@ -18,4 +18,8 @@
   .property-type-active{
     @apply text-primary-500 bg-primary-100 border-primary-500 border-2
   }
+
+  .property-type-hover{
+    @apply hover:text-primary-500 hover:bg-primary-100 hover:border-primary-500 hover:border-2
+  }
 }

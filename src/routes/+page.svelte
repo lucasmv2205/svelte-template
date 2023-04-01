@@ -2,8 +2,8 @@
 	import Image from '../assets/image.png';
 
 	type PropertyType = {
-		type: String;
-		icon: String
+		type: string;
+		icon: string
 	}
 
 	const propertiesType: PropertyType[] = [
@@ -24,12 +24,7 @@
 			icon: "far fa-building bg-transparent",
 		}
 	]
-	let selectedPropertyType = {} as PropertyType
-
-	const selectPropertyType = (property: PropertyType) => {
-		console.log(property)
-		selectedPropertyType = property
-	}
+	let selectedPropertyType = ""
 
 </script>
 
@@ -77,16 +72,15 @@
 			<span class="font-semibold tracking-wide"> Property Type </span>
 			<div class="mt-2 grid grid-cols-4 md:grid-cols-2 md:gap-4 gap-8">
 				{#each propertiesType as property}
-				<!-- svelte-ignore a11y-click-events-have-key-events -->
-				<div
-					class={'border-1 text-xl font-semibold w-[180px] h-[80px] border rounded flex flex-row items-center justify-center gap-3 hover:text-primary-500 hover:bg-primary-100 hover:border-primary-500 hover:border-2'}
-					on:click={() => selectPropertyType(property)}
+				<button
+					class="border-1 text-xl font-semibold w-[180px] h-[80px] border rounded flex flex-row items-center justify-center gap-3 property-type-hover {property.type === selectedPropertyType &&'property-type-active'}"
+					on:click={() => selectedPropertyType = property.type}
 				>
 					<i class={property.icon +' bg-tranparent'} />
 					<div class="bg-transparent">
 						<span class="bg-transparent">{property.type}</span>
 					</div>
-				</div>
+				</button>
 				{/each}
 			</div>
 		</div>
