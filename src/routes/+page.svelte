@@ -7,10 +7,10 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<div class="w-[800px] mx-auto mt-2 md:text-xl">
+<div class="w-[800px] mx-auto mt-2 xl:mt-8 md:text-xl">
 	<form class="py-4">
 		<div class="flex gap-12">
-			<div class="max-w-lg md:w-[600px] md:mx-auto">
+			<div class="md:max-w-lg md:mx-auto">
 				<div>
 					<h2 class="text-3xl">Property details</h2>
 					<p class="mt-2 text-justify">
@@ -42,7 +42,7 @@
 			</div>
 			<img class="object-contain md:hidden" src={Image} alt="colorful house" />
 		</div>
-		<div class="mt-8 md:max-w-lg md:w-[600px] md:mx-auto">
+		<div class="mt-8 md:max-w-lg md:mx-auto">
 			<span class="font-semibold tracking-wide"> Property Type </span>
 			<div class="mt-2 grid grid-cols-4 md:grid-cols-2 md:gap-4 gap-8">
 				<div
@@ -79,7 +79,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="mt-8 md:max-w-lg md:w-[600px] md:mx-auto">
+		<div class="mt-8 md:max-w-lg md:mx-auto">
 			<span class="font-semibold tracking-wide"> Unit info </span>
 			<div class="mt-2 px-5 py-4 grid grid-rows-2 gap-4 border shadow-lg md:max-w-md">
 				<div class="grid grid-cols-4 md:grid-cols-2 md:gap-4 md:max-w-md gap-8">
@@ -159,16 +159,18 @@
 				</div>
 			</div>
 		</div>
-		<div class="mt-8 md:max-w-lg md:w-[300px] md:mx-auto flex flex-row justify-between items-center">
+		<div class="mt-[4rem] md:max-w-lg md:mx-auto flex flex-row justify-between items-center">
 			<button
 			class="rounded-full p-2 w-[140px] uppercase border border-black font-medium hover:bg-gray-200 motion-safe:transition"
-			>back</button
-		>
-		<button
-			type="submit"
-			class="rounded-full p-2 w-[140px] uppercase border border-1 bg-indigo-500 text-white font-medium hover:bg-indigo-600 motion-safe:transition"
-			>continue</button
-		>
+			>
+				back
+			</button>
+			<button
+				type="submit"
+				class="rounded-full p-2 w-[140px] uppercase border border-1 bg-indigo-500 text-white font-medium hover:bg-indigo-600 motion-safe:transition md:mr-12"
+				>
+				continue
+			</button>
 		</div>
 	</form>
 </div>
