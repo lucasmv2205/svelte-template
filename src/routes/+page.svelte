@@ -37,7 +37,7 @@
 	<form class="py-4">
 		<div class="flex gap-12">
 			<div class="md:max-w-lg md:mx-auto">
-				<div class="max-w-md">
+				<div>
 					<h2 class="text-3xl">Property details</h2>
 					<p class="mt-2 text-justify">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
