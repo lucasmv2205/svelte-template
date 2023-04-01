@@ -1,10 +1,7 @@
 <script lang="ts">
 	import Image from '../assets/image.png';
-
-	type PropertyType = {
-		type: string;
-		icon: string
-	}
+	import PropertyTypeCard from '../components/PropertyTypeCard/index.svelte';
+  import type { PropertyType } from "../Types/Property"
 
 	const propertiesType: PropertyType[] = [
 		{
@@ -25,6 +22,10 @@
 		}
 	]
 	let selectedPropertyType = ""
+
+	const setSelectedProperty = (property: PropertyType) => {
+		selectedPropertyType = property.type
+	}
 
 </script>
 
@@ -72,15 +73,7 @@
 			<span class="font-semibold tracking-wide"> Property Type </span>
 			<div class="mt-2 grid grid-cols-4 md:grid-cols-2 md:gap-4 gap-8">
 				{#each propertiesType as property}
-				<button
-					class="border-1 text-xl font-semibold w-[180px] h-[80px] border rounded flex flex-row items-center justify-center gap-3 property-type-hover {property.type === selectedPropertyType &&'property-type-active'}"
-					on:click={() => selectedPropertyType = property.type}
-				>
-					<i class={property.icon +' bg-tranparent'} />
-					<div class="bg-transparent">
-						<span class="bg-transparent">{property.type}</span>
-					</div>
-				</button>
+				<PropertyTypeCard setSelectedProperty={setSelectedProperty} property={property} selectedPropertyType={selectedPropertyType} />
 				{/each}
 			</div>
 		</div>
