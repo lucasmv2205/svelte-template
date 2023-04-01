@@ -1,4 +1,21 @@
-@import '@fontsource/fira-mono';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply rounded-full p-2 w-[140px] uppercase border font-medium motion-safe:transition;
+  }
+
+  .form-section{
+    @apply md:max-w-lg md:mx-auto
+  }
+
+  .form-field{
+    @apply flex flex-col
+  }
+
+  .property-type-active{
+    @apply text-primary-500 bg-primary-100 border-primary-500 border-2
+  }
+}
