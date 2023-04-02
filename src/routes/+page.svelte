@@ -117,7 +117,7 @@
 				<div class="grid grid-cols-5 md:grid-cols-2 md:gap-4 md:max-w-md gap-8">
 					<div class="form-field relative">
 						<label for="beds" class="label-field"> Beds </label>
-							<img src={Bed} class="absolute top-11 md:top-[52px] left-2 z-50" alt="">
+							<img src={Bed} class="absolute top-11 md:top-[50px] left-2 z-50" alt="">
 							<img src={Arrow} alt="" class="absolute top-[52px] md:top-[56px] left-28 md:left-[10rem] z-50" />
 							<select id="beds" name="beds" class="input-field pl-10">
 							<option value="1">1</option>
@@ -148,13 +148,13 @@
 					</div>
 					<div class="form-field relative">
 						<label for="available" class="label-field"> Available on </label>
-						<img src={Calendar} class="absolute top-11 md:top-[46px] left-2 z-50" alt="">
+						<img src={Calendar} class="absolute top-11 md:top-[50px] left-2 z-50" alt="">
 						<input
 						value="2021-04-11"
 							type="date"
 							id="available"
 							name="available"
-							class="input-field text-sm pl-10"
+							class="input-field text-sm md:text-base pl-10"
 						/>
 					</div>
 					<div class="form-field relative">
