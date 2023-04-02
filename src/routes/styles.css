@@ -4,7 +4,7 @@
 
 @layer components {
   .btn-primary {
-    @apply rounded-full p-2 w-[140px] uppercase border font-medium motion-safe:transition;
+    @apply rounded-full p-2 w-[140px] uppercase border motion-safe:transition;
   }
 
   .form-section{
@@ -15,6 +15,18 @@
     @apply flex flex-col
   }
 
+  .input-field{
+    @apply appearance-none border border-gray-400 rounded p-3 text-purple-100
+  }
+
+  .label-field{
+    @apply mb-2 font-semibold tracking-wide text-purple-500
+  }
+
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+
   .property-type-active{
     @apply text-primary-500 bg-primary-100 border-primary-500 border-2
   }
@@ -23,12 +35,5 @@
     @apply hover:text-primary-500 hover:bg-primary-100 hover:border-primary-500 hover:border-2
   }
 
-  .input-field{
-    @apply appearance-none border border-gray-400 rounded p-3
-  }
-
-  input[type="date"]::-webkit-calendar-picker-indicator {
-    display: none;
-  }
 
 }

@@ -18,11 +18,18 @@ export default {
 			sm: { max: '639px' }
 			// => @media (max-width: 639px) { ... }
 		},
+		fontFamily: {
+			sans: ['Inter var, sans-serif']
+		},
 		extend: {
 			colors: {
 				primary: {
 					100: '#F3F1FE',
 					500: '#745CF1'
+				},
+				purple: {
+					100: '#474374',
+					500: '#35344C'
 				}
 			}
 		}
