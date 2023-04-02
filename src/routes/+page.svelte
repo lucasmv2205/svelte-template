@@ -1,5 +1,10 @@
 <script lang="ts">
 	import Image from '../assets/image.png';
+	import Bath from '../assets/icons/bath.svg';
+	import Bed from '../assets/icons/beds.svg';
+	import Calendar from '../assets/icons/calendar.svg';
+	import Money from '../assets/icons/money.svg';
+	import Person from '../assets/icons/person.svg';
 	import PropertyTypeCard from '../components/PropertyTypeCard/index.svelte';
   import type { PropertyType } from "../Types/Property"
 
@@ -52,7 +57,7 @@
 							type="text"
 							id="nameInput"
 							name="nameInput"
-							class="border border-gray-400 rounded p-2"
+							class="input-field"
 						/>
 					</div>
 					<div class="form-field max-w-md">
@@ -62,7 +67,7 @@
 							id="address"
 							name="address"
 							placeholder="21 Jump Street, Los Angeles, California"
-							class="border border-gray-400 rounded p-2"
+							class="input-field"
 						/>
 					</div>
 				</div>
@@ -88,12 +93,14 @@
 							id="unitName"
 							name="unitName"
 							placeholder="Name and/or number"
-							class="border border-gray-400 rounded p-2"
+							class="input-field"
 						/>
 					</div>
-					<div class="form-field">
+					<div class="form-field relative">
 						<label for="rent" class="mb-2 font-semibold tracking-wide"> Rent </label>
-						<input type="text" id="rent" name="rent" class="border border-gray-400 rounded p-2" />
+							<img src={Money} class="absolute top-11 left-1 z-50" alt="">
+							<span class="absolute top-11 left-32 z-50">/mo</span>
+							<input type="number" min="0" id="rent" name="rent" class="input-field pl-6 pr-14" />
 					</div>
 					<div class="form-field">
 						<label for="deposit" class="mb-2 font-semibold tracking-wide"> Deposit </label>
@@ -101,18 +108,18 @@
 							type="text"
 							id="deposit"
 							name="deposit"
-							class="border border-gray-400 rounded p-2"
+							class="input-field"
 						/>
 					</div>
 					<div class="form-field">
 						<label for="lease" class="mb-2 font-semibold tracking-wide"> Lease Length </label>
-						<input type="text" id="lease" name="lease" class="border border-gray-400 rounded p-2" />
+						<input type="text" id="lease" name="lease" class="input-field" />
 					</div>
 				</div>
 				<div class="grid grid-cols-5 md:grid-cols-2 md:gap-4 md:max-w-md gap-8">
 					<div class="form-field">
 						<label for="beds" class="mb-2 font-semibold tracking-wide">Beds</label>
-						<select id="beds" name="beds" class="form-select border border-gray-400 rounded p-2">
+						<select id="beds" name="beds" class="form-select input-field">
 							<option value="1">1</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
@@ -120,7 +127,7 @@
 					</div>
 					<div class="form-field">
 						<label for="baths" class="mb-2 font-semibold tracking-wide">Baths</label>
-						<select id="baths" name="baths" class="border border-gray-400 rounded p-2">
+						<select id="baths" name="baths" class="input-field">
 							<option value="1">1</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
@@ -134,7 +141,7 @@
 							min="0"
 							id="sqFt"
 							name="sqFt"
-							class="border border-gray-400 rounded p-2"
+							class="input-field"
 						/>
 					</div>
 					<div class="form-field">
@@ -143,12 +150,12 @@
 							type="date"
 							id="available"
 							name="available"
-							class="border border-gray-400 rounded p-2"
+							class="input-field"
 						/>
 					</div>
 					<div class="form-field">
 						<label for="vacancy" class="mb-2 font-semibold tracking-wide">Vacancy</label>
-						<select id="vacancy" name="vacancy" class="border border-gray-400 rounded p-2">
+						<select id="vacancy" name="vacancy" class="input-field">
 							<option value="1">1</option>
 							<option value="2">2</option>
 							<option value="3">3</option>

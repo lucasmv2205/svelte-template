@@ -22,4 +22,16 @@
   .property-type-hover{
     @apply hover:text-primary-500 hover:bg-primary-100 hover:border-primary-500 hover:border-2
   }
+
+  .input-field{
+    @apply appearance-none border border-gray-400 rounded p-3
+  }
+
+  input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+  }
 }
