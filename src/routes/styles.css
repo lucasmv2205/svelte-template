@@ -24,7 +24,11 @@
   }
 
   .input-field{
-    @apply border border-gray-400 rounded p-3
+    @apply appearance-none border border-gray-400 rounded p-3
+  }
+
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
   }
 
 }

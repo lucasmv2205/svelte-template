@@ -4,6 +4,7 @@
 	import Bed from '../assets/icons/beds.svg';
 	import Calendar from '../assets/icons/calendar.svg';
 	import Money from '../assets/icons/money.svg';
+	import Arrow from '../assets/icons/arrow.svg';
 	import Person from '../assets/icons/person.svg';
 	import PropertyTypeCard from '../components/PropertyTypeCard/index.svelte';
   import type { PropertyType } from "../Types/Property"
@@ -98,14 +99,14 @@
 					</div>
 					<div class="form-field relative">
 						<label for="rent" class="mb-2 font-semibold tracking-wide"> Rent </label>
-							<img src={Money} class="absolute top-11 left-1 z-50" alt="">
-							<span class="absolute top-11 left-32 z-50">/mo</span>
+							<img src={Money} class="absolute top-11 md:top-[52px] left-1 z-50" alt="">
+							<span class="absolute top-11 md:top-[48px] left-32 z-50">/mo</span>
 							<input type="number" min="0" id="rent" name="rent" class="input-field pl-6 pr-14" />
 					</div>
 					<div class="form-field relative">
 						<label for="deposit" class="mb-2 font-semibold tracking-wide"> Deposit </label>
-							<img src={Money} class="absolute top-11 left-1 z-50" alt="">
-							<span class="absolute top-11 left-32 z-50">/mo</span>
+							<img src={Money} class="absolute top-11 md:top-[52px] left-1 z-50" alt="">
+							<span class="absolute top-11 md:top-[48px] left-32 z-50">/mo</span>
 							<input type="number" min="0" id="deposit" name="deposit" class="input-field pl-6 pr-14" />
 					</div>
 					<div class="form-field">
@@ -116,7 +117,8 @@
 				<div class="grid grid-cols-5 md:grid-cols-2 md:gap-4 md:max-w-md gap-8">
 					<div class="form-field relative">
 						<label for="beds" class="mb-2 font-semibold tracking-wide"> Beds </label>
-							<img src={Bed} class="absolute top-11 left-2 z-50" alt="">
+							<img src={Bed} class="absolute top-11 md:top-[52px] left-2 z-50" alt="">
+							<img src={Arrow} alt="" class="absolute top-[52px] md:top-[56px] left-28 md:left-[10rem] z-50" />
 							<select id="beds" name="beds" class="input-field pl-10">
 							<option value="1">1</option>
 							<option value="2">2</option>
@@ -125,7 +127,8 @@
 					</div>
 					<div class="form-field relative">
 						<label for="baths" class="mb-2 font-semibold tracking-wide"> Baths </label>
-							<img src={Bath} class="absolute top-11 left-2 z-50" alt="">
+							<img src={Bath} class="absolute top-11 md:top-[52px] left-2 z-50" alt="">
+							<img src={Arrow} alt="" class="absolute top-[52px] md:top-[56px] left-28 md:left-[10rem] z-50" />
 							<select id="baths" name="baths" class="input-field pl-10">
 							<option value="1">1</option>
 							<option value="2">2</option>
@@ -143,18 +146,21 @@
 							class="input-field"
 						/>
 					</div>
-					<div class="form-field">
+					<div class="form-field relative">
 						<label for="available" class="mb-2 font-semibold tracking-wide"> Available on </label>
+						<img src={Calendar} class="absolute top-11 md:top-[46px] left-2 z-50" alt="">
 						<input
+						value="2021-04-11"
 							type="date"
 							id="available"
 							name="available"
-							class="input-field"
+							class="input-field text-sm pl-10"
 						/>
 					</div>
 					<div class="form-field relative">
 						<label for="vacancy" class="mb-2 font-semibold tracking-wide"> Vacancy </label>
-							<img src={Person} class="absolute top-11 left-2 z-50" alt="">
+							<img src={Person} class="absolute top-11 md:top-[52px] left-2 z-50" alt="">
+							<img src={Arrow} alt="" class="absolute top-[52px] md:top-[56px] left-28 md:left-[10rem] z-50" />
 							<select id="vacancy" name="vacancy" class="input-field pl-10">
 							<option value="1">1</option>
 							<option value="2">2</option>
