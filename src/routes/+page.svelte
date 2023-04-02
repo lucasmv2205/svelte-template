@@ -102,32 +102,31 @@
 							<span class="absolute top-11 left-32 z-50">/mo</span>
 							<input type="number" min="0" id="rent" name="rent" class="input-field pl-6 pr-14" />
 					</div>
-					<div class="form-field">
+					<div class="form-field relative">
 						<label for="deposit" class="mb-2 font-semibold tracking-wide"> Deposit </label>
-						<input
-							type="text"
-							id="deposit"
-							name="deposit"
-							class="input-field"
-						/>
+							<img src={Money} class="absolute top-11 left-1 z-50" alt="">
+							<span class="absolute top-11 left-32 z-50">/mo</span>
+							<input type="number" min="0" id="deposit" name="deposit" class="input-field pl-6 pr-14" />
 					</div>
 					<div class="form-field">
 						<label for="lease" class="mb-2 font-semibold tracking-wide"> Lease Length </label>
-						<input type="text" id="lease" name="lease" class="input-field" />
+						<input placeholder="12" type="number" id="lease" name="lease" class="input-field" />
 					</div>
 				</div>
 				<div class="grid grid-cols-5 md:grid-cols-2 md:gap-4 md:max-w-md gap-8">
-					<div class="form-field">
-						<label for="beds" class="mb-2 font-semibold tracking-wide">Beds</label>
-						<select id="beds" name="beds" class="form-select input-field">
+					<div class="form-field relative">
+						<label for="beds" class="mb-2 font-semibold tracking-wide"> Beds </label>
+							<img src={Bed} class="absolute top-11 left-2 z-50" alt="">
+							<select id="beds" name="beds" class="input-field pl-10">
 							<option value="1">1</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
 						</select>
 					</div>
-					<div class="form-field">
-						<label for="baths" class="mb-2 font-semibold tracking-wide">Baths</label>
-						<select id="baths" name="baths" class="input-field">
+					<div class="form-field relative">
+						<label for="baths" class="mb-2 font-semibold tracking-wide"> Baths </label>
+							<img src={Bath} class="absolute top-11 left-2 z-50" alt="">
+							<select id="baths" name="baths" class="input-field pl-10">
 							<option value="1">1</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
@@ -153,9 +152,10 @@
 							class="input-field"
 						/>
 					</div>
-					<div class="form-field">
-						<label for="vacancy" class="mb-2 font-semibold tracking-wide">Vacancy</label>
-						<select id="vacancy" name="vacancy" class="input-field">
+					<div class="form-field relative">
+						<label for="vacancy" class="mb-2 font-semibold tracking-wide"> Vacancy </label>
+							<img src={Person} class="absolute top-11 left-2 z-50" alt="">
+							<select id="vacancy" name="vacancy" class="input-field pl-10">
 							<option value="1">1</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
