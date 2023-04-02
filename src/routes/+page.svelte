@@ -94,7 +94,7 @@
 							id="unitName"
 							name="unitName"
 							placeholder="Name and/or number"
-							class="input-field"
+							class="input-field px-2"
 						/>
 					</div>
 					<div class="form-field relative">
