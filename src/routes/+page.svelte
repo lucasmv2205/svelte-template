@@ -110,8 +110,8 @@
 							<input type="number" min="0" id="deposit" name="deposit" class="input-field pl-6 pr-14" />
 					</div>
 					<div class="form-field">
-						<label for="lease" class="label-field"> Lease Length </label>
-						<input placeholder="12" type="number" id="lease" name="lease" class="input-field" />
+						<label for="lease" class="label-field"> Lease Length</label>
+						<input placeholder="12" min="0" type="number" id="lease" name="lease" class="input-field" />
 					</div>
 				</div>
 				<div class="grid grid-cols-5 md:grid-cols-2 md:gap-4 md:max-w-md gap-8">
