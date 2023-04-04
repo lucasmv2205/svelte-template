@@ -1,0 +1,46 @@
+{
+  "order_details": [
+    {
+      "image": "http://www.example.com/airship/images/the_odyssey.jpg",
+      "price": "100000.99",
+      "product_id": "the_odyssey",
+      "id": 1,
+      "product": {
+        "in_stock": 2,
+        "id": "the_odyssey",
+        "maximum_speed": 5,
+        "passenger_capacity": 101,
+        "title": "The Odyssey"
+      },
+      "quantity": 1
+    },
+    {
+      "image": "http://www.example.com/airship/images/the_odyssey.jpg",
+      "price": "100000.99",
+      "product_id": "the_odyssey",
+      "id": 2,
+      "product": {
+        "in_stock": 4,
+        "id": "the_odyssey",
+        "maximum_speed": 5,
+        "passenger_capacity": 101,
+        "title": "The Odyssey"
+      },
+      "quantity": 1
+    },
+    {
+      "image": "http://www.example.com/airship/images/the_odyssey.jpg",
+      "price": "100000.99",
+      "product_id": "the_odyssey",
+      "id": 3,
+      "product": {
+        "in_stock": 9,
+        "id": "the_odyssey",
+        "maximum_speed": 5,
+        "passenger_capacity": 101,
+        "title": "The Odyssey"
+      },
+      "quantity": 1
+    }
+  ]
+}
